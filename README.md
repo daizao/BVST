@@ -6,7 +6,7 @@
 	3.Please pay attention to the placement rules of folders.
 	4.Please put all the lig files (mol2 or sdf formula) in the same doc, and named lig_file. 
 	5.Before you run this program, you should copy your data in a safe path.
-	6.Make sure Open Babel,R,Perl is installed.
+	6.Make sure OpenBabel,R,Perl is installed.
 	7.The Linux version of Vina is compiled in the Centos 7 system. If you encounter an error in Vina on Linux, please recompile.
 
 ### OpenBabel Website : [OpenBabel](https://openbabel.org/)
