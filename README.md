@@ -22,10 +22,6 @@ sudo dnf install openbabel -y
 ```R
 install.packages(c("ggplot2","tidyverse"))
 ```
-### Perl dependencies
-```Perl
-cpan File::Copy Getopt::Long File::Basename File::Spec Cwd Getopt::Long FindBin File::Copy
-```
 
 ### Usage
 ```Perl
