@@ -9,10 +9,12 @@
 	6.Make sure Open Babel,R,Perl is installed.
 	7.The Linux version of Vina is compiled in the Centos 7 system. If you encounter an error in Vina on Linux, please recompile.
 
-### Open Babel Website : [Open Babel](https://openbabel.org/)
-### Open Babel install in Linux (Rocky)
+### OpenBabel Website : [Open Babel](https://openbabel.org/)
+### OpenBabel install in Linux
 ```Bash
 sudo dnf install openbabel -y
+or
+sudo apt install openbabel -y
 ```
 
 ### Vina compilation reference : [Vina recompile](https://www.dzbioinformatics.com/2020/09/05/autodock-vina-%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91%e5%ae%89%e8%a3%85/)
