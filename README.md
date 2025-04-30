@@ -1,12 +1,10 @@
 ## **BVST**
-	BVST(Batch Virtual Screening Tool) is a tool for batch automatic docking and sorting of proteins and drug molecules.
+	BVST(Batch Virtual Screening Tool)  is a Perl-based pipline developed for high-throughput molecular docking and ranking of protein–molecule interactions.
 ### Please pay attention to the following issues before calculation
 	1.Please make sure that the ligand file name is not too long.
 	2.Prepare yourself's protein pdbqt and Grid box file 
-		(if you want make a Grid box,the pdbqt must be provided. 
-		So we do not make a batch script to produce pdbqt files).  
 	3.Please pay attention to the placement rules of folders.
-	4.Please put all the lig files (mol2 or sdf formula) in the same doc, and named lig_file.   
+	4.Please put all the lig files (mol2 or sdf formula) in the same doc, and named lig_file. 
 	5.Before you run this program, you should copy your data in a safe path.
 	6.Make sure Open Babel,R,Perl is installed.
 	7.The Linux version of Vina is compiled in the Centos 7 system. If you encounter an error in Vina on Linux, please recompile.
@@ -24,14 +22,28 @@ sudo dnf install openbabel -y
 ```R
 install.packages(c("ggplot2","tidyverse"))
 ```
-
-### Run sample
+### Perl dependencies
 ```Perl
-perl run.pl --path /path/to/files #the default out_prefix is out under the /path/to/files
+cpan File::Copy Getopt::Long File::Basename File::Spec Cwd Getopt::Long FindBin File::Copy
+```
+
+### Usage
+```Perl
+perl /path/to/BVST/bin/run.pl --help
+        Usage:
+                perl run.pl [options]
+        options:
+        --path = Enter the folder path where the files is located
+        --out_prefix = Output path of the results    default: out
+        -h = prints this message
+```
+### Sample
+```Perl
+perl /path/to/BVST/bin/run.pl --path /path/to/files #the default out_prefix is out under the /path/to/files
 ```
 or
 ```Perl
-perl run.pl --path /path/to/files --out_prefix /path/to/output 
+perl /path/to/BVST/bin/run.pl --path /path/to/files --out_prefix /path/to/output 
 ```
 
 ### In the output files, plot.pdf and final_sort_energy.txt were obtained
@@ -39,4 +51,3 @@ perl run.pl --path /path/to/files --out_prefix /path/to/output
 	Mol_old_name    Molname Target  Energy
 	Quercetin der   Quercetin_der   ESR1    -8.3
 	ZINC105741014   ZINC105741014   MAPK14  -7.9
-
