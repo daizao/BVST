@@ -13,7 +13,9 @@
 ### OpenBabel install in Linux
 ```Bash
 sudo dnf install openbabel -y
+```
 or
+```bash
 sudo apt install openbabel -y
 ```
 
