@@ -51,3 +51,6 @@ perl /path/to/BVST/bin/run.pl --path /path/to/files --out_prefix /path/to/output
 	Mol_old_name    Molname Target  Energy
 	Quercetin der   Quercetin_der   ESR1    -8.3
 	ZINC105741014   ZINC105741014   MAPK14  -7.9
+### Example data
+
+[example data](https://doi.org/10.6084/m9.figshare.28915079.v1)
